@@ -29,7 +29,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             val navController = rememberNavController()
-            ShowList(navController);
             NavHost(
                 navController = navController,
                 startDestination = "showList"
@@ -57,6 +56,7 @@ fun ShowList(navControler: NavController) {
         modifier = Modifier
             .verticalScroll(rememberScrollState())
             .fillMaxSize()
+            .padding(20.dp)
     ) {
         for (president in list) {
             Text(
@@ -84,7 +84,6 @@ fun ShowInfo(string: String?, navControler: NavController) {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .background(Color.White)
                 .padding(20.dp)
         ) {
             Text(text = "President Info", fontSize = 48.sp)
