@@ -1,2 +1,3 @@
 # SensorBasedMobileApp-Course
-All materials from Sensor Based Mobile Applicaitons Course realized at Metropolia University of Applied Sciences
+All materials from my Sensor Based Mobile Applicaitons Course carried out at Metropolia University of Applied Sciences
+
