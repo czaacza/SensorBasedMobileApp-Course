@@ -5,3 +5,6 @@ All materials from my Sensor Based Mobile Applicaitons Course carried out at Met
 
 ## Projects made as a part of the course:
 ### Presidents project (Jetpack compose basics, navigation)
+
+
+### Material Design Basics (Components, MaterialTheme)
