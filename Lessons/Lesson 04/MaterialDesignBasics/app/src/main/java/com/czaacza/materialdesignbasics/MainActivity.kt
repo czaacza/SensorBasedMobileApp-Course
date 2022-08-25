@@ -29,29 +29,7 @@ class MainActivity : ComponentActivity() {
             MaterialDesignBasicsTheme {
                 Scaffold(
                     topBar = {
-                        TopAppBar(
-                            title = { Text("Simple TopAppBar") },
-                            navigationIcon = {
-                                IconButton(onClick = { /* doSomething() */ }) {
-                                    Icon(Icons.Filled.Menu, contentDescription = null)
-                                }
-                            },
-                            actions = {
-                                // RowScope here, so these icons will be placed horizontally
-                                IconButton(onClick = { /* doSomething() */ }) {
-                                    Icon(
-                                        Icons.Filled.Favorite,
-                                        contentDescription = "Localized description"
-                                    )
-                                }
-                                IconButton(onClick = { /* doSomething() */ }) {
-                                    Icon(
-                                        Icons.Filled.Favorite,
-                                        contentDescription = "Localized description"
-                                    )
-                                }
-                            }
-                        )
+                        TopBarDemo()
                     }
                 ) {
                     Surface {
@@ -65,8 +43,30 @@ class MainActivity : ComponentActivity() {
 
 
 @Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
+fun TopBarDemo(){
+    TopAppBar(
+        title = { Text("Simple TopAppBar") },
+        navigationIcon = {
+            IconButton(onClick = { /* doSomething() */ }) {
+                Icon(Icons.Filled.Menu, contentDescription = null)
+            }
+        },
+        actions = {
+            // RowScope here, so these icons will be placed horizontally
+            IconButton(onClick = { /* doSomething() */ }) {
+                Icon(
+                    Icons.Filled.Favorite,
+                    contentDescription = "Localized description"
+                )
+            }
+            IconButton(onClick = { /* doSomething() */ }) {
+                Icon(
+                    Icons.Filled.Favorite,
+                    contentDescription = "Localized description"
+                )
+            }
+        }
+    )
 }
 
 @Composable
@@ -76,7 +76,7 @@ fun CardDemo() {
             .fillMaxWidth()
             .padding(15.dp)
             .clickable { },
-        elevation = 10.dp
+        elevation = 16.dp
     ) {
         Column(
             modifier = Modifier.padding(15.dp)
