@@ -8,11 +8,11 @@ Network communication is included in java/kotlin language.
 
 Digital communication in its nature is a stream of zeros and ones (bites)
 
-![Zrzut ekranu 2022-08-23 o 10.22.19.png](Lesson%2003%20Networking%20and%20Multithreading%20b2aac26c6e6641e68038d12c25bc3574/Zrzut_ekranu_2022-08-23_o_10.22.19.png)
+![Zrzut ekranu 2022-08-23 o 10.22.19.png](Zrzut_ekranu_2022-08-23_o_10.22.19.png)
 
 Information stream chain
 
-![Zrzut ekranu 2022-08-23 o 10.23.21.png](Lesson%2003%20Networking%20and%20Multithreading%20b2aac26c6e6641e68038d12c25bc3574/Zrzut_ekranu_2022-08-23_o_10.23.21.png)
+![Zrzut ekranu 2022-08-23 o 10.23.21.png](Zrzut_ekranu_2022-08-23_o_10.23.21.png)
 
 **InputStream** - Gets the lowest code (bit code) and changes it into Byte stream
 
