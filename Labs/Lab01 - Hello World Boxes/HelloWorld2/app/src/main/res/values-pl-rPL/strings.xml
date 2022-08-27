@@ -3,4 +3,6 @@
     <string name="app_name">Hello World 2</string>
     <string name="button">KLIKNIJ</string>
     <string name="hello_world">Witaj Świecie!</string>
+    <string name="goodbye_darkness">Żegnaj Ciemności</string>
+    <string name="placeholder_text">Wpisz swoje imie</string>
 </resources>

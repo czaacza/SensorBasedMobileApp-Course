@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Hello World 2</string>
+    <string name="app_title" translatable="false">W1_D1 Lab 1</string>
     <string name="button">CLICK ME</string>
     <string name="hello_world">Hello World!</string>
+    <string name="goodbye_darkness">"Goodbye Darkness"</string>
+    <string name="placeholder_text">Put your name here</string>
 </resources>
