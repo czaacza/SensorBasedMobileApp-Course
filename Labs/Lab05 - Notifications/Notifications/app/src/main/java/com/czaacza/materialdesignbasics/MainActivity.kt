@@ -49,6 +49,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             createNotificationChannel()
             val context : Context = LocalContext.current
+
             val notification = NotificationCompat.Builder(context, CHANNEL_ID)
                 .setSmallIcon(androidx.core.R.drawable.notification_icon_background)
                 .setContentTitle("Congratulations!")
@@ -57,8 +58,6 @@ class MainActivity : ComponentActivity() {
                 .setVibrate(longArrayOf(1000, 1000))
                 .setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION))
                 .build()
-            Log.i("THIS", "$this")
-            Log.i("LOCALCONTEXT", "${LocalContext.current}")
 
             val scaffoldState = rememberScaffoldState()
             val scope = rememberCoroutineScope()
@@ -213,22 +212,5 @@ fun CardDemo() {
             }
         }
     }
-}
-
-
-@SuppressLint("PrivateResource")
-fun createNotification(context: Context): Notification {
-    var builder = NotificationCompat.Builder(context, CHANNEL_ID)
-        .setSmallIcon(androidx.core.R.drawable.notification_icon_background)
-        .setContentTitle("My notification")
-        .setContentText("Much longer text that cannot fit one line...")
-        .setStyle(
-            NotificationCompat.BigTextStyle()
-                .bigText("Much longer text that cannot fit one line...")
-        )
-        .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-        .build()
-
-    return builder
 }
 
