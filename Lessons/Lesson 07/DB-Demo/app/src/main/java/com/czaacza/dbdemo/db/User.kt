@@ -1,14 +1,12 @@
-package com.czaacza.dbdemo.db
+package com.example.db_demo.db
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
 data class User(
-    @PrimaryKey(autoGenerate = true) val uid: Long,
-    val firstname: String,
-    val lastname: String
-) {
-    //constructor, getter and setter are implicit :)
-    override fun toString() = "$firstname $lastname ($uid)"
-}
+    @PrimaryKey(autoGenerate = true)
+    val id: Long,
+    val firstName: String,
+    val lastName: String
+)

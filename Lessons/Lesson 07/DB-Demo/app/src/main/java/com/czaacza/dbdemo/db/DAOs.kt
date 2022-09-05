@@ -1,34 +1,33 @@
-package com.czaacza.dbdemo.db
+package com.example.db_demo.db;
 
-import androidx.lifecycle.LiveData
+import androidx.lifecycle.LiveData;
 import androidx.room.*
 
-class DAOs {
 
-    @Dao
-    interface BaseDao<T>{
-        fun getAll() : LiveData<List<T>>
+@Dao
+interface BaseDao<T> {
 
-        @Insert(onConflict = OnConflictStrategy.REPLACE)
-        suspend fun insert(item: T): Long
+    fun getAll(): LiveData<List<T>>
 
-        @Update
-        suspend fun update(item: T)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insert(item: T): Long
 
-        @Delete
-        suspend fun delete(item: T)
-    }
+    @Update
+    suspend fun update(item: T)
 
-    @Dao
-    interface UserDao: BaseDao<User>{
-        @Query("SELECT * FROM user")
-        override fun getAll(): LiveData<List<User>>
-    }
-
-    @Dao
-    interface ContactDao: BaseDao<Contact>{
-        @Query("SELECT * FROM contact")
-        override fun getAll(): LiveData<List<Contact>>
-    }
-
+    @Delete
+    suspend fun delete(item: T)
 }
+
+@Dao
+interface UserDao: BaseDao<User> {
+    @Query("SELECT * FROM user")
+    override fun getAll(): LiveData<List<User>>
+}
+
+@Dao
+interface ContactDao: BaseDao<Contact> {
+    @Query("select * from contact")
+    override fun getAll(): LiveData<List<Contact>>
+}
+

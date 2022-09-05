@@ -1,9 +1,11 @@
-package com.czaacza.dbdemo.db
+package com.example.db_demo.db
 
+import androidx.room.Entity
 import androidx.room.PrimaryKey
 
+@Entity
 data class Contact(
-    @PrimaryKey(autoGenerate = true) val value: String,
-    val User: Long,
-    val Type: String
+    @PrimaryKey(autoGenerate = true)
+    val cid: Long,
+    val contactInfo:String
 )
