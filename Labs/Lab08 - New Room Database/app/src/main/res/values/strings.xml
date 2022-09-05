@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Room Database Project</string>
+    <string name="top_app_bar_title">Lab08 - Room Database</string>
+    <string name="header_teams">Teams</string>
+    <string name="header_players">Players</string>
+    <string name="button_text">Insert</string>
+    <string name="text_field_placeholder">Name of the football club</string>
+
+
+
+</resources>

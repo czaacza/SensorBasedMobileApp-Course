@@ -1,11 +1,11 @@
-package com.czaacza.roomdatabaseapp.data
+package com.czaacza.roomdatabaseproject.data
 
 import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.Relation
 
 class TeamPlayers() {
-    @Embedded val team: Team? = null
+    @Embedded var team: Team? = null
     @Relation(parentColumn = "tid", entityColumn = "team")
-    val players : List<Player>? = null
+    var players : List<Player>? = null
 }
