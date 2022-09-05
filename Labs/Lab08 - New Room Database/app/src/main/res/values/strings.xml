@@ -4,7 +4,11 @@
     <string name="header_teams">Teams</string>
     <string name="header_players">Players</string>
     <string name="button_text">Insert</string>
-    <string name="text_field_placeholder">Name of the football club</string>
+    <string name="text_field_placeholder_teamname">Name of the football club</string>
+    <string name="text_field_placeholder_firstname">First name</string>
+    <string name="text_field_placeholder_lastname">Last name</string>
+    <string name="text_field_placeholder_number">Shirt number</string>
+
 
 
 

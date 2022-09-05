@@ -12,4 +12,8 @@ data class Player(
     @ColumnInfo(name = "first_name") val firstName: String,
     @ColumnInfo(name = "last_name") val lastName: String,
     @ColumnInfo(name = "number") val number: Int
-)
+){
+    override fun toString(): String {
+        return "$firstName $lastName - $number"
+    }
+}

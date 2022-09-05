@@ -1,9 +1,9 @@
 package com.czaacza.roomdatabaseproject
 
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -13,10 +13,16 @@ import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import com.czaacza.roomdatabaseproject.data.Player
 import com.czaacza.roomdatabaseproject.data.Team
-import com.czaacza.roomdatabaseproject.data.TeamViewModel
+import com.czaacza.roomdatabaseproject.model.TeamViewModel
 
 const val TAG = "MainActivityTag"
 
@@ -31,36 +37,114 @@ class MainActivity : ComponentActivity() {
 //        teamViewModel.insert(Team(1, "Arsenal"))
 //        teamViewModel.insert(Team(2, "Chelsea"))
 //        teamViewModel.insert(Team(3, "Real"))
-
         setContent {
-            Column {
-                ShowTopAppBar()
-                InsertTeam(teamViewModel = teamViewModel)
-                ListUsers(teamViewModel = teamViewModel)
-            }
+            AppNavigation(teamViewModel = teamViewModel)
         }
     }
 }
 
 @Composable
-fun ListUsers(teamViewModel: TeamViewModel) {
+fun AppNavigation(teamViewModel: TeamViewModel) {
+    val navController = rememberNavController()
+
+    NavHost(navController = navController, startDestination = "main") {
+        composable("main") {
+            ShowMain(teamViewModel, navController)
+        }
+        composable("players/{teamId}") {
+            val id = it.arguments?.getString("teamId")?.toLong() ?: 0
+            ShowPlayers(teamViewModel = teamViewModel, id, navController)
+        }
+    }
+
+}
+
+@Composable
+fun ShowMain(teamViewModel: TeamViewModel, navController: NavController) {
+    Column {
+        ShowTopAppBar()
+        InsertTeam(teamViewModel = teamViewModel)
+        ListUsers(teamViewModel = teamViewModel, navController = navController)
+    }
+}
+
+@Composable
+fun ShowPlayers(teamViewModel: TeamViewModel, id: Long, navController: NavController) {
+    val chosenTeam = teamViewModel.getTeamById(id)?.observeAsState()
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(20.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(
+            text = chosenTeam?.value?.name.toString(),
+            fontSize = 35.sp,
+            fontWeight = FontWeight(700)
+        )
+        ListPlayers(teamViewModel = teamViewModel, id = id)
+    }
+}
+
+@Composable
+fun ListPlayers(teamViewModel: TeamViewModel, id: Long) {
+    val playersList = teamViewModel.getPlayersByTeamId(id).observeAsState()
+    if (playersList?.value != null) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 20.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            InsertPlayer(teamViewModel = teamViewModel, id = id)
+            LazyColumn(content = {
+                item {
+                    Row(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(vertical = 20.dp),
+                        horizontalArrangement = Arrangement.Center
+                    ) {
+                        Text(stringResource(id = R.string.header_players), fontSize = 20.sp)
+                    }
+                }
+                items(playersList.value!!) { player ->
+                    Text(
+                        "Player:   $player", fontSize = 27.sp,
+                    )
+                }
+            })
+        }
+
+    }
+}
+
+@Composable
+fun ListUsers(teamViewModel: TeamViewModel, navController: NavController) {
     val teamList = teamViewModel.getAllTeams()?.observeAsState()
     if (teamList?.value != null) {
         Column(
-            modifier = Modifier.fillMaxWidth().padding(horizontal = 20.dp),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 20.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             LazyColumn(content = {
                 item {
                     Row(
-                        modifier = Modifier.fillMaxWidth(),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(vertical = 20.dp),
                         horizontalArrangement = Arrangement.Center
                     ) {
-                        Text(stringResource(id = R.string.header_teams), fontSize = 20.sp)
+                        Text(stringResource(id = R.string.header_players), fontSize = 20.sp)
                     }
                 }
                 items(teamList.value!!) { team ->
-                    Text("Team: $team", fontSize = 35.sp)
+                    Text("Team: $team", fontSize = 35.sp,
+                        modifier = Modifier.clickable() {
+                            navController.navigate("players/${team.tid}")
+                        })
                 }
             })
         }
@@ -74,14 +158,14 @@ fun InsertTeam(teamViewModel: TeamViewModel) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(20.dp),
+            .padding(top = 30.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     )
     {
         TextField(
             value = teamName,
             placeholder = {
-                Text(text = stringResource(id = R.string.text_field_placeholder))
+                Text(text = stringResource(id = R.string.text_field_placeholder_teamname))
             },
             onValueChange = {
                 teamName = it
@@ -94,6 +178,75 @@ fun InsertTeam(teamViewModel: TeamViewModel) {
         }
     }
 }
+
+@Composable
+fun InsertPlayer(teamViewModel: TeamViewModel, id: Long) {
+    var playerFirstName by remember { mutableStateOf("") }
+    var playerLastName by remember { mutableStateOf("") }
+    var playerNumber by remember { mutableStateOf("") }
+
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(top = 30.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    )
+    {
+        TextField(
+            value = playerFirstName,
+            placeholder = {
+                Text(text = stringResource(id = R.string.text_field_placeholder_firstname))
+            },
+            onValueChange = {
+                playerFirstName = it
+            })
+
+        TextField(
+            value = playerLastName,
+            placeholder = {
+                Text(text = stringResource(id = R.string.text_field_placeholder_lastname))
+            },
+            onValueChange = {
+                playerLastName = it
+            })
+
+        TextField(
+            value = playerNumber,
+            placeholder = {
+                Text(text = stringResource(id = R.string.text_field_placeholder_number))
+            },
+            onValueChange = {
+                playerNumber = it
+            })
+
+        Button(onClick = {
+            try {
+                teamViewModel.insertPlayer(
+                    Player(
+                        id,
+                        0,
+                        playerFirstName,
+                        playerLastName,
+                        playerNumber.toInt()
+                    )
+                )
+            } catch(e: NumberFormatException){
+                teamViewModel.insertPlayer(
+                    Player(
+                        id,
+                        0,
+                        playerFirstName,
+                        playerLastName,
+                        0
+                    )
+                )
+            }
+        }) {
+            Text(text = stringResource(id = R.string.button_text))
+        }
+    }
+}
+
 
 @Composable
 fun ShowTopAppBar() {

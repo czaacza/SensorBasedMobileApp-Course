@@ -11,7 +11,7 @@ interface TeamDao {
 
     //    GET THE TEAM WITH PLAYERS OF GIVEN ID
     @Query("SELECT * FROM team WHERE team.tid = :teamid")
-    fun getTeamByID(teamid: Long): LiveData<TeamPlayers>
+    fun getTeamByID(teamid: Long): LiveData<Team>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(team: Team): Long

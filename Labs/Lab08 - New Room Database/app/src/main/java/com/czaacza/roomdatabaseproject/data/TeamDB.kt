@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase
 @Database(entities = [Team::class, Player::class], version = 1)
 abstract class TeamDB : RoomDatabase() {
     abstract fun teamDao(): TeamDao
-//    abstract fun playerDao(): PlayerDao
+    abstract fun playerDao(): PlayerDao
 
     companion object Instance {
         private var instance: TeamDB? = null
