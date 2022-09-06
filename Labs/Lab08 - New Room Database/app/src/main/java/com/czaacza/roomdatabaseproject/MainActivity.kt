@@ -1,8 +1,10 @@
 package com.czaacza.roomdatabaseproject
 
+import android.content.res.Resources
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -12,6 +14,7 @@ import androidx.compose.runtime.*
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -23,8 +26,7 @@ import androidx.navigation.compose.rememberNavController
 import com.czaacza.roomdatabaseproject.data.Player
 import com.czaacza.roomdatabaseproject.data.Team
 import com.czaacza.roomdatabaseproject.model.TeamViewModel
-
-const val TAG = "MainActivityTag"
+import com.czaacza.roomdatabaseproject.ui.theme.Blue500
 
 class MainActivity : ComponentActivity() {
 
@@ -34,9 +36,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         teamViewModel = TeamViewModel(application = application)
 
-//        teamViewModel.insert(Team(1, "Arsenal"))
-//        teamViewModel.insert(Team(2, "Chelsea"))
-//        teamViewModel.insert(Team(3, "Real"))
         setContent {
             AppNavigation(teamViewModel = teamViewModel)
         }
@@ -89,7 +88,7 @@ fun ShowPlayers(teamViewModel: TeamViewModel, id: Long, navController: NavContro
 @Composable
 fun ListPlayers(teamViewModel: TeamViewModel, id: Long) {
     val playersList = teamViewModel.getPlayersByTeamId(id).observeAsState()
-    if (playersList?.value != null) {
+    if (playersList.value != null) {
         Column(
             modifier = Modifier
                 .fillMaxWidth()
@@ -230,7 +229,7 @@ fun InsertPlayer(teamViewModel: TeamViewModel, id: Long) {
                         playerNumber.toInt()
                     )
                 )
-            } catch(e: NumberFormatException){
+            } catch (e: NumberFormatException) {
                 teamViewModel.insertPlayer(
                     Player(
                         id,
@@ -253,6 +252,6 @@ fun ShowTopAppBar() {
     TopAppBar(
         title = {
             Text(text = stringResource(id = R.string.top_app_bar_title))
-        }
+        },
     )
 }

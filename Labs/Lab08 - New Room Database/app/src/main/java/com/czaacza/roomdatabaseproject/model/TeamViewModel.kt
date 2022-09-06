@@ -7,7 +7,6 @@ import androidx.lifecycle.viewModelScope
 import com.czaacza.roomdatabaseproject.data.Player
 import com.czaacza.roomdatabaseproject.data.Team
 import com.czaacza.roomdatabaseproject.data.TeamDB
-import com.czaacza.roomdatabaseproject.data.TeamPlayers
 import kotlinx.coroutines.launch
 
 class TeamViewModel(application: Application) : AndroidViewModel(application) {
@@ -20,18 +19,6 @@ class TeamViewModel(application: Application) : AndroidViewModel(application) {
     fun insert(team : Team){
         viewModelScope.launch {
             teamDB?.teamDao()?.insert(team)
-        }
-    }
-
-    fun update(team : Team){
-        viewModelScope.launch {
-            teamDB?.teamDao()?.update(team)
-        }
-    }
-
-    fun delete(team : Team){
-        viewModelScope.launch {
-            teamDB?.teamDao()?.delete(team)
         }
     }
 
