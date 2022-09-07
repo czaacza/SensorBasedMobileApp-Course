@@ -39,3 +39,15 @@ All materials (notes, presentations, projects) from my Sensor Based Mobile Appli
 ### Coroutines Intro Project (coroutines, mutex)
 <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab06-Coroutines%20mistakes-found.png" height="400"/>
 
+### Coroutines + Network Project (coroutines, webAPI calls)
+<p float="left">
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab07-Coroutines-Net-Loading-Screen.png" height="400"/>
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab07-Coroutines-Net-Image.png" height="400"/>
+</p>
+
+
+### Room Database Project (Inner Room Database)
+<p float="left">
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab08-Players-View-1.png" height="400"/>
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab08-Players-View-2.png" height="400"/>
+</p>
