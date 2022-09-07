@@ -16,6 +16,13 @@ object PresidentsDataProvider {
         presidents.add(President("Mauno Koivisto", 1982, 1994, "Manu"))
         presidents.add(President("Martti Ahtisaari", 1994, 2000, "Mahtisaari"))
         presidents.add(President("Tarja Halonen", 2000, 2012, "Eka naispresidentti"))
-        presidents.add(President("Sauli Niinistö", 2012, 2024, "Ensimmäisen koiran, Oskun, omistaja"))
+        presidents.add(
+            President(
+                "Sauli Niinistö",
+                2012,
+                2024,
+                "Ensimmäisen koiran, Oskun, omistaja"
+            )
+        )
     }
 }
