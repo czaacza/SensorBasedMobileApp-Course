@@ -46,8 +46,14 @@ All materials (notes, presentations, projects) from my Sensor Based Mobile Appli
 </p>
 
 
-### Room Database Project (Inner Room Database)
+### Room Database Project (Inner Room Database, Queries, object databases)
 <p float="left">
     <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab08-Players-View-1.png" height="400"/>
     <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab08-Players-View-2.png" height="400"/>
+</p>
+
+### Retrofit Project (Web API calls using retrofit library, REST, requests)
+<p float="left">
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab09-App-Look-1.png" height="400"/>
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab09-App-Look-2.png" height="400"/>
 </p>
