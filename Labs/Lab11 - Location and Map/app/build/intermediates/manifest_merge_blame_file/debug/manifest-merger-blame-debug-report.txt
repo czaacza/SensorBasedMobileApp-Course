@@ -1,0 +1,182 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.czaacza.locationandmapproject"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="29"
+8-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+11-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:6:5-81
+11-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:6:22-78
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:7:5-79
+12-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:7:22-76
+13
+14    <uses-feature android:name="android.hardware.location.gps" />
+14-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:9:5-66
+14-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:9:19-63
+15    <uses-feature android:name="android.hardware.location.network" />
+15-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:10:5-70
+15-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:10:19-67
+16    <uses-feature android:name="android.hardware.wifi" />
+16-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:11:5-58
+16-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:11:19-55
+17
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:13:5-67
+18-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:13:22-64
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:14:5-79
+19-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:14:22-76
+20    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+20-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:15:5-76
+20-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:15:22-73
+21    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+21-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:17:5-18:40
+21-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:17:22-78
+22
+23    <supports-screens
+23-->[org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:9:5-12:40
+24        android:anyDensity="true"
+24-->[org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:10:9-34
+25        android:largeScreens="true"
+25-->[org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:11:9-36
+26        android:normalScreens="true" />
+26-->[org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:12:9-37
+27
+28    <uses-feature
+28-->[org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:20:5-22:36
+29        android:name="android.hardware.telephony"
+29-->[org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:21:9-50
+30        android:required="false" />
+30-->[org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:22:9-33
+31
+32    <application
+32-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:22:5-43:19
+33        android:allowBackup="true"
+33-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:23:9-35
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.7.0] /Users/czaacza/.gradle/caches/transforms-3/82b9e16ff3d1fdf65142f0deb3f6b395/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+35        android:dataExtractionRules="@xml/data_extraction_rules"
+35-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:24:9-65
+36        android:debuggable="true"
+37        android:extractNativeLibs="false"
+38        android:fullBackupContent="@xml/backup_rules"
+38-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:25:9-54
+39        android:icon="@mipmap/ic_launcher"
+39-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:26:9-43
+40        android:label="@string/app_name"
+40-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:27:9-41
+41        android:roundIcon="@mipmap/ic_launcher_round"
+41-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:28:9-54
+42        android:supportsRtl="true"
+42-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:29:9-35
+43        android:testOnly="true"
+44        android:theme="@style/Theme.LocationAndMapProject" >
+44-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:30:9-59
+45        <activity
+45-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:32:9-42:20
+46            android:name="com.czaacza.locationandmapproject.MainActivity"
+46-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:33:13-41
+47            android:exported="true"
+47-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:34:13-36
+48            android:label="@string/app_name"
+48-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:35:13-45
+49            android:theme="@style/Theme.LocationAndMapProject" >
+49-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:36:13-63
+50            <intent-filter>
+50-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:37:13-41:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:38:17-69
+51-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:38:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:40:17-77
+53-->/Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:40:27-74
+54            </intent-filter>
+55        </activity>
+56        <activity
+56-->[androidx.compose.ui:ui-tooling:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/385fd5c1bf29261ad0603b4435334581/transformed/ui-tooling-1.1.0-beta01/AndroidManifest.xml:25:9-27:39
+57            android:name="androidx.compose.ui.tooling.PreviewActivity"
+57-->[androidx.compose.ui:ui-tooling:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/385fd5c1bf29261ad0603b4435334581/transformed/ui-tooling-1.1.0-beta01/AndroidManifest.xml:26:13-71
+58            android:exported="true" />
+58-->[androidx.compose.ui:ui-tooling:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/385fd5c1bf29261ad0603b4435334581/transformed/ui-tooling-1.1.0-beta01/AndroidManifest.xml:27:13-36
+59
+60        <uses-library
+60-->[androidx.window:window:1.0.0] /Users/czaacza/.gradle/caches/transforms-3/b0782ddcf4066616b205f10b4305003d/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+61            android:name="androidx.window.extensions"
+61-->[androidx.window:window:1.0.0] /Users/czaacza/.gradle/caches/transforms-3/b0782ddcf4066616b205f10b4305003d/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+62            android:required="false" />
+62-->[androidx.window:window:1.0.0] /Users/czaacza/.gradle/caches/transforms-3/b0782ddcf4066616b205f10b4305003d/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+63        <uses-library
+63-->[androidx.window:window:1.0.0] /Users/czaacza/.gradle/caches/transforms-3/b0782ddcf4066616b205f10b4305003d/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+64            android:name="androidx.window.sidecar"
+64-->[androidx.window:window:1.0.0] /Users/czaacza/.gradle/caches/transforms-3/b0782ddcf4066616b205f10b4305003d/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+65            android:required="false" />
+65-->[androidx.window:window:1.0.0] /Users/czaacza/.gradle/caches/transforms-3/b0782ddcf4066616b205f10b4305003d/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+66
+67        <activity
+67-->[androidx.compose.ui:ui-test-manifest:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/7305440247432c3166e67f5b8bb7fdad/transformed/ui-test-manifest-1.1.0-beta01/AndroidManifest.xml:25:9-27:39
+68            android:name="androidx.activity.ComponentActivity"
+68-->[androidx.compose.ui:ui-test-manifest:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/7305440247432c3166e67f5b8bb7fdad/transformed/ui-test-manifest-1.1.0-beta01/AndroidManifest.xml:26:13-63
+69            android:exported="true" />
+69-->[androidx.compose.ui:ui-test-manifest:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/7305440247432c3166e67f5b8bb7fdad/transformed/ui-test-manifest-1.1.0-beta01/AndroidManifest.xml:27:13-36
+70        <activity
+70-->[com.google.android.gms:play-services-base:18.0.1] /Users/czaacza/.gradle/caches/transforms-3/fef0ae9a420fd5af4ce7dc93eb80317d/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+71            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+71-->[com.google.android.gms:play-services-base:18.0.1] /Users/czaacza/.gradle/caches/transforms-3/fef0ae9a420fd5af4ce7dc93eb80317d/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+72            android:exported="false"
+72-->[com.google.android.gms:play-services-base:18.0.1] /Users/czaacza/.gradle/caches/transforms-3/fef0ae9a420fd5af4ce7dc93eb80317d/transformed/play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+73            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+73-->[com.google.android.gms:play-services-base:18.0.1] /Users/czaacza/.gradle/caches/transforms-3/fef0ae9a420fd5af4ce7dc93eb80317d/transformed/play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+74
+75        <meta-data
+75-->[com.google.android.gms:play-services-basement:18.0.0] /Users/czaacza/.gradle/caches/transforms-3/6b0ebebd92a3881d0f46e30bea79ee06/transformed/play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+76            android:name="com.google.android.gms.version"
+76-->[com.google.android.gms:play-services-basement:18.0.0] /Users/czaacza/.gradle/caches/transforms-3/6b0ebebd92a3881d0f46e30bea79ee06/transformed/play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+77            android:value="@integer/google_play_services_version" />
+77-->[com.google.android.gms:play-services-basement:18.0.0] /Users/czaacza/.gradle/caches/transforms-3/6b0ebebd92a3881d0f46e30bea79ee06/transformed/play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+78
+79        <provider
+79-->[androidx.profileinstaller:profileinstaller:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/bba4dd70b1a8edf1dafbb430477cdb5c/transformed/profileinstaller-1.1.0-beta01/AndroidManifest.xml:26:9-34:20
+80            android:name="androidx.startup.InitializationProvider"
+80-->[androidx.profileinstaller:profileinstaller:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/bba4dd70b1a8edf1dafbb430477cdb5c/transformed/profileinstaller-1.1.0-beta01/AndroidManifest.xml:27:13-67
+81            android:authorities="com.czaacza.locationandmapproject.androidx-startup"
+81-->[androidx.profileinstaller:profileinstaller:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/bba4dd70b1a8edf1dafbb430477cdb5c/transformed/profileinstaller-1.1.0-beta01/AndroidManifest.xml:28:13-68
+82            android:exported="false" >
+82-->[androidx.profileinstaller:profileinstaller:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/bba4dd70b1a8edf1dafbb430477cdb5c/transformed/profileinstaller-1.1.0-beta01/AndroidManifest.xml:29:13-37
+83            <meta-data
+83-->[androidx.profileinstaller:profileinstaller:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/bba4dd70b1a8edf1dafbb430477cdb5c/transformed/profileinstaller-1.1.0-beta01/AndroidManifest.xml:31:13-33:52
+84                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+84-->[androidx.profileinstaller:profileinstaller:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/bba4dd70b1a8edf1dafbb430477cdb5c/transformed/profileinstaller-1.1.0-beta01/AndroidManifest.xml:32:17-85
+85                android:value="androidx.startup" />
+85-->[androidx.profileinstaller:profileinstaller:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/bba4dd70b1a8edf1dafbb430477cdb5c/transformed/profileinstaller-1.1.0-beta01/AndroidManifest.xml:33:17-49
+86        </provider>
+87
+88        <receiver
+88-->[androidx.profileinstaller:profileinstaller:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/bba4dd70b1a8edf1dafbb430477cdb5c/transformed/profileinstaller-1.1.0-beta01/AndroidManifest.xml:36:9-45:20
+89            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+89-->[androidx.profileinstaller:profileinstaller:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/bba4dd70b1a8edf1dafbb430477cdb5c/transformed/profileinstaller-1.1.0-beta01/AndroidManifest.xml:37:13-76
+90            android:directBootAware="false"
+90-->[androidx.profileinstaller:profileinstaller:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/bba4dd70b1a8edf1dafbb430477cdb5c/transformed/profileinstaller-1.1.0-beta01/AndroidManifest.xml:38:13-44
+91            android:enabled="true"
+91-->[androidx.profileinstaller:profileinstaller:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/bba4dd70b1a8edf1dafbb430477cdb5c/transformed/profileinstaller-1.1.0-beta01/AndroidManifest.xml:39:13-35
+92            android:exported="true"
+92-->[androidx.profileinstaller:profileinstaller:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/bba4dd70b1a8edf1dafbb430477cdb5c/transformed/profileinstaller-1.1.0-beta01/AndroidManifest.xml:40:13-36
+93            android:permission="android.permission.DUMP" >
+93-->[androidx.profileinstaller:profileinstaller:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/bba4dd70b1a8edf1dafbb430477cdb5c/transformed/profileinstaller-1.1.0-beta01/AndroidManifest.xml:41:13-57
+94            <intent-filter>
+94-->[androidx.profileinstaller:profileinstaller:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/bba4dd70b1a8edf1dafbb430477cdb5c/transformed/profileinstaller-1.1.0-beta01/AndroidManifest.xml:42:13-44:29
+95                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+95-->[androidx.profileinstaller:profileinstaller:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/bba4dd70b1a8edf1dafbb430477cdb5c/transformed/profileinstaller-1.1.0-beta01/AndroidManifest.xml:43:17-91
+95-->[androidx.profileinstaller:profileinstaller:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/bba4dd70b1a8edf1dafbb430477cdb5c/transformed/profileinstaller-1.1.0-beta01/AndroidManifest.xml:43:25-88
+96            </intent-filter>
+97        </receiver>
+98    </application>
+99
+100</manifest>

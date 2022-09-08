@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.czaacza.locationandmapproject.app-mergeDebugResources-46:/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/Users/czaacza/.gradle/caches/transforms-3/133b3b150fe94626b9c8cf5fb43fb7d7/transformed/ui-1.1.0-beta01/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                },
+                {
+                    "source": "/Users/czaacza/.gradle/caches/transforms-3/8474b85752417df678078fb590ddf5f7/transformed/appcompat-1.1.0/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    },
+                    "to": {
+                        "startLines": "3,4,5",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "104,174,245",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "169,240,308"
+                    }
+                }
+            ]
+        }
+    ]
+}
