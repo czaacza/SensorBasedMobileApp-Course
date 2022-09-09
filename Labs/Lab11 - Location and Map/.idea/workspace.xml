@@ -14,54 +14,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1053e675-9840-4376-9b16-611ed531b5ac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/czaacza/locationandmapproject/LocationApi.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/ids.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/androidTest/java/com/czaacza/newlocationandmapproject/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/java/com/czaacza/newlocationandmapproject/LocationApi.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/java/com/czaacza/newlocationandmapproject/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/java/com/czaacza/newlocationandmapproject/ui/theme/Color.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/java/com/czaacza/newlocationandmapproject/ui/theme/Shape.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/java/com/czaacza/newlocationandmapproject/ui/theme/Theme.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/java/com/czaacza/newlocationandmapproject/ui/theme/Type.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/app/src/test/java/com/czaacza/newlocationandmapproject/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Lab11 - New Location and Map/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab10 - Camera API/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10 - Camera API/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab10 - Camera API/app/src/main/java/com/czaacza/cameraapiproject/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab10 - Camera API/app/src/main/java/com/czaacza/cameraapiproject/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Location_and_Map_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Location_and_Map_Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Location_and_Map_Project.app.androidTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Location_and_Map_Project.app.androidTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Location_and_Map_Project.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Location_and_Map_Project.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Location_and_Map_Project.app.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Location_and_Map_Project.app.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Location_and_Map_Project.app.unitTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Location_and_Map_Project.app.unitTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +49,23 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Location and Map Project" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">

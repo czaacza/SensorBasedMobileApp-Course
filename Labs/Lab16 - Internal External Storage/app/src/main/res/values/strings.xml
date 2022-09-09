@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Internal External Storage Project</string>
+    <string name="read_failed">I could not read the text from file</string>
+    <string name="button_text">Write to file</string>
+</resources>
