@@ -280,7 +280,6 @@
     <item name="item_touch_helper_previous_elevation" type="id"/>
     <item name="line1" type="id"/>
     <item name="line3" type="id"/>
-    <item name="map" type="id"/>
     <item name="parent_matrix" type="id"/>
     <item name="preferences_detail" type="id"/>
     <item name="preferences_header" type="id"/>
@@ -356,7 +355,7 @@
     <string name="about">About</string>
     <string name="about_message">This software uses map data provided by OpenStreetMap.org</string>
     <string name="androidx_startup" translatable="false">androidx.startup</string>
-    <string name="app_name">Location and Map Project</string>
+    <string name="app_name">Location And Map Project</string>
     <string name="base">OSM base layer</string>
     <string name="base_nl">Netherlands base overlay</string>
     <string name="bing">Bing</string>

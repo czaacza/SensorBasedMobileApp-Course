@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:2:1-45:12
+ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:2:1-40:12
 MERGED from [androidx.compose.ui:ui-tooling:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/385fd5c1bf29261ad0603b4435334581/transformed/ui-tooling-1.1.0-beta01/AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.compose.material:material:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/928e873754ee3be88f2abdba0eaf6ec2/transformed/material-1.1.0-beta01/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity-compose:1.3.1] /Users/czaacza/.gradle/caches/transforms-3/a71719391143c2cb38f8a78dcc62d439/transformed/activity-compose-1.3.1/AndroidManifest.xml:17:1-24:12
@@ -33,8 +33,8 @@ MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/czaacza/.gradl
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/czaacza/.gradle/caches/transforms-3/239c1ed5371e375a19ffcaf3bd917017/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.window:window:1.0.0] /Users/czaacza/.gradle/caches/transforms-3/b0782ddcf4066616b205f10b4305003d/transformed/window-1.0.0/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.compose.ui:ui-test-manifest:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/7305440247432c3166e67f5b8bb7fdad/transformed/ui-test-manifest-1.1.0-beta01/AndroidManifest.xml:17:1-30:12
-MERGED from [com.google.android.gms:play-services-location:20.0.0] /Users/czaacza/.gradle/caches/transforms-3/45dccb37c3040b9a7ffdc0dc583f9c63/transformed/play-services-location-20.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:2:1-27:12
+MERGED from [com.google.android.gms:play-services-location:20.0.0] /Users/czaacza/.gradle/caches/transforms-3/45dccb37c3040b9a7ffdc0dc583f9c63/transformed/play-services-location-20.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.core:core-ktx:1.7.0] /Users/czaacza/.gradle/caches/transforms-3/96f8af3c0ca1e58e253a638d94734bf9/transformed/core-ktx-1.7.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.compose.ui:ui-util:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/be3310a9b62f4c3bbd6d51da234cb8f1/transformed/ui-util-1.1.0-beta01/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] /Users/czaacza/.gradle/caches/transforms-3/92fc164b913e7423f1c4450092c6b828/transformed/lifecycle-livedata-core-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
@@ -76,71 +76,63 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/czaacza/.gradle/ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/czaacza/.gradle/caches/transforms-3/eb1e73bd1c131dc51cdd1a4eb08aa361/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /Users/czaacza/.gradle/caches/transforms-3/ca720a569d1ac54396aff985e40e19a7/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/czaacza/.gradle/caches/transforms-3/cfc8ab7d73c95b13c738c61fb2749081/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:2:1-45:12
+INJECTED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:2:1-40:12
 	package
 		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:4:5-48
 		INJECTED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:2:1-45:12
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:2:1-40:12
 		INJECTED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:2:1-45:12
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:2:1-40:12
 		INJECTED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:2:11-69
-uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:6:5-81
-	android:name
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:6:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:7:5-79
+ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:6:5-79
 	android:name
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:7:22-76
-uses-feature#android.hardware.location.gps
-ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:9:5-66
-MERGED from [org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:17:5-19:36
-MERGED from [org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:17:5-19:36
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:6:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:7:5-81
 	android:name
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:9:19-63
-uses-feature#android.hardware.location.network
-ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:10:5-70
-MERGED from [org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:14:5-16:36
-MERGED from [org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:14:5-16:36
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
+ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:8:5-85
 	android:name
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:10:19-67
-uses-feature#android.hardware.wifi
-ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:11:5-58
-MERGED from [org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:23:5-25:36
-MERGED from [org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:23:5-25:36
-	android:name
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:11:19-55
-uses-permission#android.permission.INTERNET
-ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:13:5-67
-	android:name
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:13:22-64
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:14:5-79
-	android:name
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:14:22-76
-uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:15:5-76
-	android:name
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:15:22-73
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:8:22-82
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:17:5-18:40
-	tools:ignore
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:18:9-37
+ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:10:5-80
 	android:name
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:17:22-78
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.INTERNET
+ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:11:5-66
+	android:name
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:11:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:12:5-78
+	android:name
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:12:22-76
+uses-feature#android.hardware.location.gps
+ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:14:5-66
+MERGED from [org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:17:5-19:36
+MERGED from [org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:17:5-19:36
+	android:name
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:14:19-63
+uses-feature#android.hardware.location.network
+ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:15:5-70
+MERGED from [org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:14:5-16:36
+MERGED from [org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:14:5-16:36
+	android:name
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:15:19-67
 application
-ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:22:5-43:19
+ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:17:5-38:19
 MERGED from [androidx.compose.ui:ui-tooling:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/385fd5c1bf29261ad0603b4435334581/transformed/ui-tooling-1.1.0-beta01/AndroidManifest.xml:24:5-28:19
 MERGED from [androidx.compose.ui:ui-tooling:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/385fd5c1bf29261ad0603b4435334581/transformed/ui-tooling-1.1.0-beta01/AndroidManifest.xml:24:5-28:19
 MERGED from [androidx.window:window:1.0.0] /Users/czaacza/.gradle/caches/transforms-3/b0782ddcf4066616b205f10b4305003d/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
@@ -166,43 +158,43 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/czaacza/.gradle/cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] /Users/czaacza/.gradle/caches/transforms-3/82b9e16ff3d1fdf65142f0deb3f6b395/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:29:9-35
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:24:9-35
 	android:label
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:27:9-41
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:22:9-41
 	android:fullBackupContent
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:25:9-54
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:20:9-54
 	android:roundIcon
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:28:9-54
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:23:9-54
 	tools:targetApi
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:31:9-29
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:26:9-29
 	android:icon
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:26:9-43
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:21:9-43
 	android:allowBackup
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:23:9-35
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:18:9-35
 	android:theme
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:30:9-59
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:25:9-59
 	android:dataExtractionRules
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:24:9-65
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:19:9-65
 activity#com.czaacza.locationandmapproject.MainActivity
-ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:32:9-42:20
+ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:27:9-37:20
 	android:label
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:35:13-45
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:30:13-45
 	android:exported
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:34:13-36
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:29:13-36
 	android:theme
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:36:13-63
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:31:13-63
 	android:name
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:33:13-41
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:28:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:37:13-41:29
+ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:32:13-36:29
 action#android.intent.action.MAIN
-ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:38:17-69
+ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:33:17-69
 	android:name
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:38:25-66
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:33:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:40:17-77
+ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:35:17-77
 	android:name
-		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:40:27-74
+		ADDED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml:35:27-74
 uses-sdk
 INJECTED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/czaacza/Desktop/mati/Kotlin/Sensor Mobile Applications Course/Labs/Lab11 - Location and Map/app/src/main/AndroidManifest.xml
@@ -265,10 +257,10 @@ MERGED from [androidx.window:window:1.0.0] /Users/czaacza/.gradle/caches/transfo
 MERGED from [androidx.window:window:1.0.0] /Users/czaacza/.gradle/caches/transforms-3/b0782ddcf4066616b205f10b4305003d/transformed/window-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.compose.ui:ui-test-manifest:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/7305440247432c3166e67f5b8bb7fdad/transformed/ui-test-manifest-1.1.0-beta01/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.compose.ui:ui-test-manifest:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/7305440247432c3166e67f5b8bb7fdad/transformed/ui-test-manifest-1.1.0-beta01/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-location:20.0.0] /Users/czaacza/.gradle/caches/transforms-3/45dccb37c3040b9a7ffdc0dc583f9c63/transformed/play-services-location-20.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:20.0.0] /Users/czaacza/.gradle/caches/transforms-3/45dccb37c3040b9a7ffdc0dc583f9c63/transformed/play-services-location-20.0.0/AndroidManifest.xml:5:5-44
 MERGED from [org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:5:5-7:41
 MERGED from [org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-location:20.0.0] /Users/czaacza/.gradle/caches/transforms-3/45dccb37c3040b9a7ffdc0dc583f9c63/transformed/play-services-location-20.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:20.0.0] /Users/czaacza/.gradle/caches/transforms-3/45dccb37c3040b9a7ffdc0dc583f9c63/transformed/play-services-location-20.0.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core-ktx:1.7.0] /Users/czaacza/.gradle/caches/transforms-3/96f8af3c0ca1e58e253a638d94734bf9/transformed/core-ktx-1.7.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.7.0] /Users/czaacza/.gradle/caches/transforms-3/96f8af3c0ca1e58e253a638d94734bf9/transformed/core-ktx-1.7.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.compose.ui:ui-util:1.1.0-beta01] /Users/czaacza/.gradle/caches/transforms-3/be3310a9b62f4c3bbd6d51da234cb8f1/transformed/ui-util-1.1.0-beta01/AndroidManifest.xml:20:5-22:41
@@ -399,6 +391,12 @@ ADDED from [org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/
 		ADDED from [org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:22:9-33
 	android:name
 		ADDED from [org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:21:9-50
+uses-feature#android.hardware.wifi
+ADDED from [org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:23:5-25:36
+	android:required
+		ADDED from [org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:25:9-33
+	android:name
+		ADDED from [org.osmdroid:osmdroid-android:6.1.14] /Users/czaacza/.gradle/caches/transforms-3/ec946355fa6bc1cf7ae6c3d2640cc24c/transformed/osmdroid-android-6.1.14/AndroidManifest.xml:24:9-45
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:18.0.1] /Users/czaacza/.gradle/caches/transforms-3/fef0ae9a420fd5af4ce7dc93eb80317d/transformed/play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
 	android:exported
