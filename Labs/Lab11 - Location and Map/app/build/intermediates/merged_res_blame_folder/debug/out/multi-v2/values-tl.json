@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.czaacza.locationandmapproject.app-mergeDebugResources-46:/values-tl/values-tl.xml",
+            "outputFile": "com.czaacza.locationandmapproject.app-mergeDebugResources-54:/values-tl/values-tl.xml",
             "map": [
                 {
                     "source": "/Users/czaacza/.gradle/caches/transforms-3/6b0ebebd92a3881d0f46e30bea79ee06/transformed/play-services-basement-18.0.0/res/values-tl/values.xml",

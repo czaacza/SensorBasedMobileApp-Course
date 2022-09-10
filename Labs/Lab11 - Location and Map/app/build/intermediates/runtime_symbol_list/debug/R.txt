@@ -941,6 +941,7 @@ int id listMode 0x7f080081
 int id list_item 0x7f080082
 int id locale 0x7f080083
 int id ltr 0x7f080084
+int id map 0x7f0800e9
 int id message 0x7f080085
 int id middle 0x7f080086
 int id multiply 0x7f080087
