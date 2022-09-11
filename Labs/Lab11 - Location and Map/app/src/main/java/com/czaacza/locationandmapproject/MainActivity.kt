@@ -96,6 +96,9 @@ fun ShowLayout(
     for (location in locations.value!!) {
         locationsAsGeopoints.add(GeoPoint(location.latitude, location.longitude))
     }
+    if (isTrackingButtonClicked == true && locationsAsGeopoints.isNotEmpty()) {
+        mapViewModel.drawLine(locationsAsGeopoints)
+    }
 
     Scaffold(
         floatingActionButton = {
