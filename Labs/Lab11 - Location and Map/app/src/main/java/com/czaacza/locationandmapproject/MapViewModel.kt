@@ -1,14 +1,18 @@
 package com.czaacza.locationandmapproject
 
 import android.app.Application
-import android.location.Location
-import androidx.compose.runtime.State
+import android.content.Context
+import android.location.Geocoder
+import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory
 import org.osmdroid.util.GeoPoint
 import org.osmdroid.views.MapView
 import org.osmdroid.views.overlay.Marker
 import org.osmdroid.views.overlay.Polyline
+import java.io.IOException
+import java.util.*
+
 
 class MapViewModel(application: Application, val map: MapView) : AndroidViewModel(application) {
 
@@ -39,13 +43,13 @@ class MapViewModel(application: Application, val map: MapView) : AndroidViewMode
         marker: Marker,
         coordinateGeoPoint: GeoPoint,
         title: String = "Your position",
-        description: String = "latitude: ${coordinateGeoPoint.latitude}, longitude: ${coordinateGeoPoint.longitude}"
+        description: String = ""
     ) {
         marker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM)
         marker.position = coordinateGeoPoint
         marker.closeInfoWindow()
         marker.title = title
-        marker.subDescription = description
+        marker.subDescription = description + "\nlatitude: ${coordinateGeoPoint.latitude}, longitude: ${coordinateGeoPoint.longitude}"
         map.overlays.add(marker)
         map.invalidate()
     }

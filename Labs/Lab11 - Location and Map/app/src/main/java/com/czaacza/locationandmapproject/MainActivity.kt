@@ -1,11 +1,11 @@
 package com.czaacza.locationandmapproject
 
 import android.content.Context
-import android.location.Location
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
@@ -14,6 +14,8 @@ import androidx.compose.runtime.*
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -25,7 +27,6 @@ import org.osmdroid.util.GeoPoint
 import org.osmdroid.views.MapView
 import org.osmdroid.views.overlay.Marker
 
-
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,7 +37,6 @@ class MainActivity : ComponentActivity() {
                 application = application,
                 map = getMap(context = this)
             )
-
             locationApi.requestLastLocation()
 
             LocationAndMapProjectTheme() {
@@ -82,6 +82,7 @@ fun ShowLayout(
     mapViewModel: MapViewModel,
     locationApi: LocationApi,
 ) {
+    val context = LocalContext.current
     val isTrackingButtonClicked = locationApi.isLocationTracked.observeAsState().value
     val coordinates = GeoPoint(
         locationApi.latitude.observeAsState().value!!,
@@ -89,10 +90,11 @@ fun ShowLayout(
     )
     val locations = locationApi.trackedLocations.observeAsState()
     val locationsAsGeopoints = mutableListOf<GeoPoint>()
-    if (locations != null) {
-        for (location in locations.value!!) {
-            locationsAsGeopoints.add(GeoPoint(location.latitude, location.longitude))
-        }
+    var startLocation = locationApi.startTrackLocation.observeAsState()
+    var endLocation = locationApi.endTrackLocation.observeAsState()
+
+    for (location in locations.value!!) {
+        locationsAsGeopoints.add(GeoPoint(location.latitude, location.longitude))
     }
 
     Scaffold(
@@ -101,7 +103,7 @@ fun ShowLayout(
                 onClick = {
                     val currentCoordinates = locationApi.requestLastLocation()
                     mapViewModel.setCenter(
-                       currentCoordinates
+                        currentCoordinates
                     )
                     mapViewModel.setMarker(
                         Marker(mapViewModel.map),
@@ -112,50 +114,68 @@ fun ShowLayout(
             ) {
                 Icon(Icons.Default.LocationOn, "Location")
             }
-        }
-    ) {
-        Column() {
-            Box(
-                modifier = Modifier.fillMaxHeight(0.8f),
+        },
+        bottomBar = {
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .fillMaxHeight(0.1f)
+                    .background(MaterialTheme.colors.primaryVariant)
+                    .padding(20.dp),
+                horizontalArrangement = Arrangement.Center
             ) {
-                ShowMap(mapViewModel, locationApi)
-                Column(
-                    modifier =
-                    Modifier
-                        .fillMaxWidth()
-                        .padding(20.dp),
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                ) {
-                    Button(modifier = Modifier.width(150.dp), onClick = {
-                        if (isTrackingButtonClicked == false) {
-                            locationApi.startLocationUpdates()
-                            mapViewModel.setMarker(
-                                Marker(mapViewModel.map),
-                                coordinates,
-                                "Track started"
-                            )
-                        } else {
-                            locationApi.stopLocationUpdates()
-                            mapViewModel.setMarker(
-                                Marker(mapViewModel.map),
-                                coordinates, "Track ended"
-                            )
-                        }
-                    }) {
-                        var prefix: String = ""
-                        prefix = if (isTrackingButtonClicked == false) {
-                            "Start"
-                        } else {
-                            "Stop"
-                        }
-                        Text(text = "$prefix tracking")
-                    }
-                }
+                Text(text = "Total walked distance: ", fontSize = 20.sp, color = Color.White)
+                Text(
+                    text = "${locationApi.getTotalDistance().toInt()} meters",
+                    fontSize = 20.sp,
+                    color = Color.White,
+                    fontWeight = FontWeight(700)
+                )
             }
-            Column() {
-                Row(modifier = Modifier.padding(20.dp)) {
-                    Text(text = "Total walked distance: ", fontSize = 20.sp)
-                    Text(text = "", fontSize = 20.sp, fontWeight = FontWeight(700))
+        },
+    ) {
+        Box(
+            modifier = Modifier.fillMaxHeight(0.9f),
+        ) {
+            ShowMap(mapViewModel, locationApi)
+            Column(
+                modifier =
+                Modifier
+                    .fillMaxWidth()
+                    .padding(20.dp),
+                horizontalAlignment = Alignment.CenterHorizontally,
+            ) {
+                Button(modifier = Modifier.width(150.dp), onClick = {
+                    if (isTrackingButtonClicked == false) {
+                        locationApi.startLocationUpdates()
+                        mapViewModel.setMarker(
+                            Marker(mapViewModel.map),
+                            coordinates,
+                            "Track started",
+                            description = locationApi.getAddress(
+                                context = context,
+                                coordinates
+                            )
+                        )
+                    } else {
+                        locationApi.stopLocationUpdates()
+                        mapViewModel.setMarker(
+                            Marker(mapViewModel.map),
+                            coordinates, "Track ended",
+                            description = locationApi.getAddress(
+                                context = context,
+                                coordinates
+                            )
+                        )
+                    }
+                }) {
+                    var prefix: String = ""
+                    prefix = if (isTrackingButtonClicked == false) {
+                        "Start"
+                    } else {
+                        "Stop"
+                    }
+                    Text(text = "$prefix tracking")
                 }
             }
         }
