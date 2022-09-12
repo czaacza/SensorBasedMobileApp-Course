@@ -63,3 +63,17 @@ All materials (notes, presentations, projects) from my Sensor Based Mobile Appli
     <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab10-Thumbnail.png" height="400"/>
     <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab10-Full-Size-Photo.png" height="400"/>
 </p>
+
+### Location Map Project (Google Play location API, osmdroid Map Api, VM architecture)
+
+<p float="left">
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab11-Distance-Change.png" height="400"/>
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab11-Marker-1.png" height="400"/>
+</p>
+
+### Storage Project (Internal/external storage input/output)
+
+<p float="left">
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab16-Before-Adding.png" height="400"/>
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab16-After-Adding.png" height="400"/>
+</p>
