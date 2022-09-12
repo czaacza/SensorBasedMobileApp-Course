@@ -28,10 +28,9 @@ All materials (notes, presentations, projects) from my Sensor Based Mobile Appli
 ### Notification/Snackbar Project (Notificaitons, Snackbars)
 
 <p float="left">
-    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab05-Notification.png" height="400"/>
     <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab05-Snackbar.png" height="400"/>
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab05-Notification.png" height="400"/>
 </p>
-
 
 ### Threads + WebAPI Project (multithreading, handler, messageQueue, webAPI)
 <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab03-ThreadsNet.png" height="400"/>
@@ -56,4 +55,11 @@ All materials (notes, presentations, projects) from my Sensor Based Mobile Appli
 <p float="left">
     <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab09-App-Look-1.png" height="400"/>
     <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab09-App-Look-2.png" height="400"/>
+</p>
+
+### Camera API Project (Camera API)
+
+<p float="left">
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab10-Thumbnail.png" height="400"/>
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab10-Full-Size-Photo.png" height="400"/>
 </p>
