@@ -1,6 +1,11 @@
 package com.czaacza.bluetoothbeaconproject
 
+import android.Manifest
+import android.bluetooth.BluetoothAdapter
+import android.bluetooth.BluetoothManager
+import android.content.pm.PackageManager
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
@@ -18,8 +23,18 @@ import androidx.compose.ui.unit.sp
 import com.czaacza.bluetoothbeaconproject.ui.theme.BluetoothBeaconProjectTheme
 
 class MainActivity : ComponentActivity() {
+
+    private var mBluetoothAdapter : BluetoothAdapter? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val bluetoothManager = getSystemService(BLUETOOTH_SERVICE) as BluetoothManager
+        val bluetoothViewModel = BluetoothViewModel(application = application,this ,bluetoothManager)
+        if(!bluetoothViewModel.checkPermissions()){
+            return
+        }
+
         setContent {
             BluetoothBeaconProjectTheme {
                 ShowContent()
@@ -46,16 +61,18 @@ fun ShowContent() {
             Text(text = "Start scanning", fontSize = 22.sp)
         }
         Spacer(modifier = Modifier.size(60.dp))
-        
+
         Text(
             text = "Bluetooth device list:",
             fontSize = 20.sp,
             fontWeight = FontWeight(600)
         )
-        
+
         LazyColumn(
             horizontalAlignment = Alignment.Start,
-            modifier = Modifier.padding(top = 20.dp).fillMaxSize()
+            modifier = Modifier
+                .padding(top = 20.dp)
+                .fillMaxSize()
         ) {
             item {
                 Text(text = "sample item text", fontSize = 18.sp)
