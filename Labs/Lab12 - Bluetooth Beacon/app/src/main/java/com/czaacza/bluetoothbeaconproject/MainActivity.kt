@@ -1,7 +1,7 @@
 package com.czaacza.bluetoothbeaconproject
 
 import android.Manifest
-import android.app.Activity
+import android.annotation.SuppressLint
 import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothManager
 import android.content.pm.PackageManager
@@ -11,6 +11,7 @@ import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.annotation.RequiresApi
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -22,12 +23,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.czaacza.bluetoothbeaconproject.ui.theme.BluetoothBeaconProjectTheme
+import com.czaacza.bluetoothbeaconproject.ui.theme.darkBackground
 
 class MainActivity : ComponentActivity() {
 
@@ -53,6 +56,7 @@ class MainActivity : ComponentActivity() {
         val bluetoothManager = getSystemService(BLUETOOTH_SERVICE) as BluetoothManager
         val bluetoothViewModel =
             BluetoothViewModel(application = application, this, bluetoothManager)
+
         if (!bluetoothViewModel.checkPermissions()) {
             return
         }
@@ -65,6 +69,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@SuppressLint("MissingPermission")
 @Composable
 fun ShowContent(bluetoothViewModel: BluetoothViewModel) {
     val scanResults = bluetoothViewModel.scanResultsLiveData.observeAsState()
@@ -73,6 +78,7 @@ fun ShowContent(bluetoothViewModel: BluetoothViewModel) {
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier
             .fillMaxSize()
+            .background(MaterialTheme.colors.background)
             .padding(40.dp)
     ) {
         Button(
@@ -89,17 +95,22 @@ fun ShowContent(bluetoothViewModel: BluetoothViewModel) {
             } else {
                 "Start"
             }
-            Text(text = "$prefix scanning", fontSize = 22.sp)
+            Text(
+                text = "$prefix scanning",
+                fontSize = 22.sp,
+                color = MaterialTheme.colors.onPrimary
+            )
         }
         Spacer(modifier = Modifier.size(60.dp))
 
         Text(
             text = "Bluetooth device list:",
             fontSize = 20.sp,
-            fontWeight = FontWeight(600)
+            fontWeight = FontWeight(600),
+            color = MaterialTheme.colors.onPrimary
         )
 
-        if(isScanning.value == true){
+        if (isScanning.value == true) {
             CircularProgressIndicator(modifier = Modifier.padding(20.dp))
         }
 
@@ -111,7 +122,24 @@ fun ShowContent(bluetoothViewModel: BluetoothViewModel) {
         ) {
             if (scanResults.value != null && isScanning.value != true) {
                 items(scanResults.value!!.toList()) { result ->
-                    Text("${result.device.address} ")
+
+                    val fontColor = if (result.isConnectable) {
+                        MaterialTheme.colors.onPrimary
+                    } else {
+                        Color.Gray
+                    }
+
+                    val deviceName = if (result.device.name != null) {
+                        result.device.name
+                    } else {
+                        ""
+                    }
+
+                    Text(
+                        "${result.device.address} $deviceName ${result.rssi}dBm",
+                        color = fontColor,
+                        fontSize = 18.sp
+                    )
                 }
             }
         }

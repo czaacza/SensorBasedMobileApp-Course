@@ -10,3 +10,6 @@ val Teal200 = Color(0xFF03DAC5)
 val Pink200 = Color(0xFFF48FB1)
 val Pink500 = Color(0xFFE91E63)
 val Pink700 = Color(0xFFC2185B)
+
+val darkBackground = Color(0xFF353334)
+val lightBackground = Color(0xFFFFFFFF)

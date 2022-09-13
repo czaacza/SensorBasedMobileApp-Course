@@ -14,24 +14,23 @@ import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityCompat
 import androidx.core.app.ActivityCompat.requestPermissions
-import androidx.core.content.ContextCompat
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import java.util.*
 import kotlin.collections.HashMap
 
 class BluetoothViewModel(
     application: Application,
-    val activity: Activity,
+    activity: Activity,
     bluetoothManager: BluetoothManager
 ) :
     AndroidViewModel(application) {
     var bluetoothAdapter: BluetoothAdapter? = null
     private val app = application
+    private val activity = activity
 
     private val results = HashMap<String, ScanResult>()
     val scanResultsLiveData = MutableLiveData<List<ScanResult>>(null)
@@ -51,7 +50,6 @@ class BluetoothViewModel(
     init {
         bluetoothAdapter = bluetoothManager.adapter
     }
-
 
     @RequiresApi(Build.VERSION_CODES.S)
     fun checkPermissions(): Boolean {
@@ -73,21 +71,6 @@ class BluetoothViewModel(
             ); return true // assuming that the user grants permission
         }
         return true
-    }
-
-    fun checkScanPermissions() {
-        if (ContextCompat.checkSelfPermission(
-                app,
-                Manifest.permission.BLUETOOTH_SCAN
-            ) != PackageManager.PERMISSION_GRANTED
-        ) {
-            Log.d("DBG", "No bluetooth scan access")
-            ActivityCompat.requestPermissions(
-                activity,
-                arrayOf(Manifest.permission.BLUETOOTH_SCAN),
-                1
-            )
-        }
     }
 
     fun scanDevices() {
@@ -122,13 +105,6 @@ class BluetoothViewModel(
 
     companion object GattAttributes {
         const val SCAN_PERIOD: Long = 5000
-        const val STATE_DISCONNECTED = 0
-        const val STATE_CONNECTING = 1
-        const val STATE_CONNECTED = 2
-        val UUID_HEART_RATE_MEASUREMENT = UUID.fromString("00002a37-0000-1000-8000-00805f9b34fb")
-        val UUID_HEART_RATE_SERVICE = UUID.fromString("0000180d-0000-1000-8000-00805f9b34fb")
-        val UUID_CLIENT_CHARACTERISTIC_CONFIG =
-            UUID.fromString("00002902-0000-1000-8000-00805f9b34fb")
     }
 
 }
