@@ -14,9 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c61342a-7852-4b4e-a1c7-c71f0c7ba465" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Lab12 - Bluetooth Beacon/app/src/main/java/com/czaacza/bluetoothbeaconproject/BluetoothViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab12 - Bluetooth Beacon/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab12 - Bluetooth Beacon/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab12 - Bluetooth Beacon/app/src/main/java/com/czaacza/bluetoothbeaconproject/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab12 - Bluetooth Beacon/app/src/main/java/com/czaacza/bluetoothbeaconproject/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/build-history.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlin/last-build.bin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
