@@ -46,7 +46,6 @@ class MainActivity : ComponentActivity() {
                 Manifest.permission.BLUETOOTH_SCAN
             ) != PackageManager.PERMISSION_GRANTED
         ) {
-            Log.d("DBG", "No bluetooth scan access")
             ActivityCompat.requestPermissions(
                 this,
                 arrayOf(Manifest.permission.BLUETOOTH_SCAN),
@@ -142,8 +141,10 @@ fun ShowContent(bluetoothViewModel: BluetoothViewModel, context : Context) {
                         fontSize = 18.sp,
                         modifier = Modifier.selectable(selected = true, onClick = {
                             val device = result.device
+                            Log.d("DBG", "$device")
                             val gattCallbackClient = GattCallbackClient(context)
                             val gattConnection = device.connectGatt(context, false, gattCallbackClient)
+
                         })
                     )
                 }

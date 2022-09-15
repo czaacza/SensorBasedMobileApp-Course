@@ -43,7 +43,7 @@ class BluetoothViewModel(
             val foundDeviceAddress = result.device.address
 
             results[foundDeviceAddress] = result
-            Log.d("DBG", "Device address: $foundDeviceAddress (${result.isConnectable})")
+//            Log.d("DBG", "Device address: $foundDeviceAddress (${result.isConnectable})")
         }
     }
 
@@ -104,7 +104,7 @@ class BluetoothViewModel(
     }
 
     companion object GattAttributes {
-        const val SCAN_PERIOD: Long = 5000
+        const val SCAN_PERIOD: Long = 3000
     }
 
 }
