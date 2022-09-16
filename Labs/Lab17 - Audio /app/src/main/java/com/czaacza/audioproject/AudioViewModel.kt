@@ -19,7 +19,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.io.*
 
-class AudioViewModel(application: Application, val activity: Activity, val storageDir: File?) :
+class AudioViewModel(application: Application, val activity: Activity, val storageDir : File?) :
     AndroidViewModel(application) {
     val app = application
 
@@ -41,7 +41,7 @@ class AudioViewModel(application: Application, val activity: Activity, val stora
 
     fun startRecording() {
         viewModelScope.launch(Dispatchers.IO) {
-            createFile("test.raw")
+            createFile("test2.raw")
             val minBufferSize = AudioRecord.getMinBufferSize(
                 44100,
                 AudioFormat.CHANNEL_OUT_STEREO,
@@ -65,6 +65,7 @@ class AudioViewModel(application: Application, val activity: Activity, val stora
                 .build()
 
             val audioData = ByteArray(minBufferSize)
+
             recorder.startRecording()
             Log.d("DBG", "Recording started")
 
@@ -75,7 +76,6 @@ class AudioViewModel(application: Application, val activity: Activity, val stora
 
                 while (recRunning) {
                     val numofBytes = recorder.read(audioData, 0, minBufferSize)
-                    Log.d("DBG", numofBytes.toString())
                     if (numofBytes > 0) {
                         dataOutputStream.write(audioData)
                     }
@@ -85,7 +85,7 @@ class AudioViewModel(application: Application, val activity: Activity, val stora
                 recorder.stop()
                 dataOutputStream.close()
             } catch (e: IOException) {
-                Log.e("FYI", "Recording error $e")
+                Log.d("DBG", "Recording error $e")
             }
         }
     }
