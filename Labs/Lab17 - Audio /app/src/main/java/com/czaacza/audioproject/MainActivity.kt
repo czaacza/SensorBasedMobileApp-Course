@@ -13,50 +13,56 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.czaacza.audioproject.ui.theme.AudioProjectTheme
-import java.io.File
-import java.io.IOException
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.async
+import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
-    lateinit var audioViewModel: AudioViewModel
+    lateinit var recordViewModel: RecordViewModel
+    lateinit var playViewModel: PlayViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         val storageDir = getExternalFilesDir(Environment.DIRECTORY_MUSIC)
 
-        audioViewModel = AudioViewModel(application, this, storageDir)
-
-
+        recordViewModel = RecordViewModel(application, this, storageDir)
+        playViewModel = PlayViewModel(application, storageDir)
 
         setContent {
             AudioProjectTheme {
-                ShowContent(audioViewModel)
+                ShowContent(recordViewModel, playViewModel)
             }
         }
     }
 }
 
 @Composable
-fun ShowContent(audioViewModel: AudioViewModel) {
+fun ShowContent(recordViewModel: RecordViewModel, playViewModel: PlayViewModel) {
     var recRunning by remember { mutableStateOf(false) }
+    var playRunning by remember { mutableStateOf(false) }
+
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
         modifier = Modifier.fillMaxSize()
     ) {
-        var prefix by remember { mutableStateOf("Start") }
+        var recordPrefix by remember { mutableStateOf("Start") }
+        var playPrefix by remember { mutableStateOf("Start") }
+
         Button(
             onClick = {
                 if (!recRunning) {
-                    audioViewModel.recRunning = true
+                    recordViewModel.recRunning = true
                     recRunning = true
-                    prefix = "Stop"
+                    recordPrefix = "Stop"
                 } else {
-                    audioViewModel.recRunning = false
+                    recordViewModel.recRunning = false
                     recRunning = false
-                    prefix = "Start"
+                    recordPrefix = "Start"
                 }
-                audioViewModel.startRecording()
+                recordViewModel.record()
             },
             shape = MaterialTheme.shapes.large,
             modifier = Modifier
@@ -64,10 +70,27 @@ fun ShowContent(audioViewModel: AudioViewModel) {
                 .width(300.dp)
                 .height(60.dp)
         ) {
-            Text(text = " $prefix record", fontSize = 32.sp)
+            Text(text = " $recordPrefix record", fontSize = 32.sp)
         }
         Button(
-            onClick = { /*TODO*/ },
+            onClick = {
+                if (!playRunning) {
+                    playViewModel.playRunning = true
+                    playRunning = true
+                    playPrefix = "Stop"
+                } else {
+                    playViewModel.playRunning = false
+                    playRunning = false
+                    playPrefix = "Start"
+                }
+
+                GlobalScope.launch(Dispatchers.IO) {
+                    val play = async {
+                        playViewModel.playAudio()
+                    }
+                    play.await()
+                }
+            },
             shape = MaterialTheme.shapes.large,
             modifier = Modifier
                 .padding(20.dp)
@@ -75,7 +98,7 @@ fun ShowContent(audioViewModel: AudioViewModel) {
                 .height(60.dp),
             colors = ButtonDefaults.buttonColors(MaterialTheme.colors.primaryVariant)
         ) {
-            Text(text = "Play", fontSize = 32.sp)
+            Text(text = "$playPrefix playing", fontSize = 32.sp)
         }
     }
 }
