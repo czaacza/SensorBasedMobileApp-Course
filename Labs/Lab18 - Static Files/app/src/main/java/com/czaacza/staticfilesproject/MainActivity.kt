@@ -8,13 +8,14 @@ import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.livedata.observeAsState
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.documentfile.provider.DocumentFile
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.czaacza.staticfilesproject.ui.theme.StaticFilesProjectTheme
+
 
 
 class MainActivity : ComponentActivity() {
@@ -41,10 +42,7 @@ class MainActivity : ComponentActivity() {
         if (requestCode == 101
             && resultCode == Activity.RESULT_OK
         ) {
-            // The result data contains a URI for the document or directory that
-            // the user selected.
             data?.data?.also { uri ->
-                // Perform operations on the document using its URI.
                 directoryUriLiveData.value = uri
             }
         }
@@ -60,18 +58,32 @@ fun ShowContent(directoryUriLiveData: LiveData<Uri>, context: Context) {
     }
 
     val documentsTree = DocumentFile.fromTreeUri(context, directoryUri.value!!)
-    val childDocuments = documentsTree?.listFiles()
+    val coroutineScope = rememberCoroutineScope()
 
-    childDocuments!!.forEach {
-        Text(text = it.name.toString())
-    }
+    tree(documentsTree, "-")
+
+
 }
 
-//fun tree(file: File): File? {
-//    // if file is null
-//    if(file.isDirectory){
-//        tree(file)
-//    }
-//
-//
-//}
+fun tree(file: DocumentFile?, sign: String) {
+    if (file == null) {
+        return
+    }
+
+    Log.d("DBG", "${sign}${file.name}")
+
+    if (file.isDirectory) {
+        if (file.listFiles() == null || file.listFiles().isEmpty()) {
+            return
+        }
+        val childDocuments = file.listFiles()
+
+        childDocuments.forEach { child ->
+            if (child.isDirectory) {
+                tree(child, sign + "--")
+            }
+        }
+    }
+
+
+}

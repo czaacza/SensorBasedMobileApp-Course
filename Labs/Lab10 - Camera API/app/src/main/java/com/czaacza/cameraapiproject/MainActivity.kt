@@ -58,7 +58,6 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun ShowImage(imgUri : Uri, imgFileAbsolutePath: String) {
-
     var result by remember { mutableStateOf<Bitmap?>(null) }
     val launcher = rememberLauncherForActivityResult(ActivityResultContracts.TakePicture()) {
         if(it){
