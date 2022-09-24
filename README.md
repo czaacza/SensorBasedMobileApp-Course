@@ -71,9 +71,45 @@ All materials (notes, presentations, projects) from my Sensor Based Mobile Appli
     <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab11-Marker-1.png" height="400"/>
 </p>
 
+### Bluetooth Project (Bluetooth LE scan, GATT connection)
+
+<p float="left">
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab12-Before-Scan.jpg" height="400"/>
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab12-Scanning.jpg" height="400"/>
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab12-After-Scan.jpg" height="400"/>
+</p>
+
+### Internal Sensor Project (android build-in sensors implementation)
+
+<p float="left">
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab14-App-View-1.jpg" height="400"/>
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab14-App-View-2.jpg" height="400"/>
+</p>
+
 ### Storage Project (Internal/external storage input/output)
 
 <p float="left">
     <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab16-Before-Adding.png" height="400"/>
     <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab16-After-Adding.png" height="400"/>
+</p>
+
+### Audio Project (AudioTrack record / play implementation)
+
+<p float="left">
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab17-Before-Record.png" height="400"/>
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab17-Recording.png" height="400"/>
+</p>
+
+### Static Files Project (static files, filePicker)
+
+<p float="left">
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab18-File-Picker.png" height="400"/>
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab18-App-Console.png" height="200"/>
+</p>
+
+### ARCore Project (Photogrammetry, 3D-Models, ARCore)
+
+<p float="left">
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab19-Area.jpg" height="400"/>
+    <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab19-Object.jpg" height="400"/>
 </p>
