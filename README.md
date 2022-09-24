@@ -4,7 +4,7 @@ All materials (notes, presentations, projects) from my Sensor Based Mobile Appli
 **The course is still in progress**
 
 
-## Projects and topics learned as a part of the course:
+## Projects and topics learned as a part of the course (from the beginning):
 
 ### Box Project (components, styling, events, state)
 <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab01-App-Image.png" height="400"/>
