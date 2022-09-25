@@ -1,7 +1,7 @@
 # SensorBasedMobileApp-Course
 All materials (notes, presentations, projects) from my Sensor Based Mobile Applicaitons Course carried out at Metropolia University of Applied Sciences
 
-**The course is still in progress*
+**The course is still in progress**
 
 
 ## Projects and topics learned as a part of the course (from the beginning):
