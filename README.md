@@ -113,3 +113,12 @@ All materials (notes, presentations, projects) from my Sensor Based Mobile Appli
     <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab19-Area.jpg" height="400"/>
     <img src="https://github.com/czaacza/SensorBasedMobileApp-Course/blob/master/img/Lab19-Object.jpg" height="400"/>
 </p>
+
+
+### Souvenir app
+
+[github repo](https://github.com/czaacza/Android-Souvenir-App)
+
+<p float="left">
+</p>
+
